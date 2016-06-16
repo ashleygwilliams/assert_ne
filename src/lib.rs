@@ -25,3 +25,15 @@ macro_rules! assert_ne {
         }
     })
 }
+
+#[test]
+#[should_panic]
+fn it_panics_when_the_values_are_equal() {
+  assert_ne!(3, 3);
+}
+
+#[test]
+fn it_does_not_panic_when_the_values_are_not_equal () {
+  assert_ne!(3, 4);
+}
+
