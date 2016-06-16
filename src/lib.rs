@@ -5,9 +5,11 @@
 ///
 /// # Examples
 ///
-/// ```
+/// ```should panic
+/// # #[macro_use] extern crate assert_ne;
+///
 /// let a = 3;
-/// let b = 2 + 2;
+/// let b = 1 + 2;
 /// assert_ne!(a, b);
 /// ```
 #[macro_export]
